@@ -1,0 +1,201 @@
+{
+  "snapshot_generated_at_utc": "2026-11-26T15:42:26.967830+00:00",
+  "description": "Historical planning demonstration for week 146; forecasts generated from the local project tools, not live current-week demand. No final evaluation rerun.",
+  "runtime": {
+    "python": "3.12.16",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1"
+  },
+  "source_sha256": {
+    "agent_data_tools.py": "caa5ac475c78967f351c84041dbbf494141ec1dfdffcacdc63209e5789db19f9",
+    "next_week.py": "8c6f2571d851ef0c7f0c0a1cef6fc8da6503f2c4e14102ec3e5b676a6bf05dbb",
+    "supervised.py": "080d8045694ac61798b2fe5cc864a87e4d614992f22aac4b3a7b7e5a73146ade"
+  },
+  "contexts": [
+    {
+      "key": "center-13/meal-2306/week-146",
+      "forecast": 213.35174122973226,
+      "source": "hgb model refit on all observed weeks <= history_end_week; target-week prices and promotions from the planning row; range from hgb's own errors (weeks 116-125).",
+      "forecast_record": {
+        "center_id": 13,
+        "meal_id": 2306,
+        "target_week": 146,
+        "history_end_week": 145,
+        "forecast_orders": 213.35174122973226,
+        "range_low": 111.1562571806905,
+        "range_high": 373.7922506344909,
+        "forecast_orders_display": 213.4,
+        "range_low_display": 111.2,
+        "range_high_display": 373.8,
+        "method_requested": "hgb",
+        "method": "hgb",
+        "is_fallback": false,
+        "range_source": "empirical_p10_p90_by_size_weeks116_125",
+        "recent_orders": [
+          {
+            "week": 142,
+            "orders": 123
+          },
+          {
+            "week": 143,
+            "orders": 54
+          },
+          {
+            "week": 144,
+            "orders": 82
+          },
+          {
+            "week": 145,
+            "orders": 324
+          }
+        ],
+        "provenance": "hgb model refit on all observed weeks <= history_end_week; target-week prices and promotions from the planning row; range from hgb's own errors (weeks 116-125).",
+        "assumptions": [
+          "Forecasts are observed weekly orders, not guaranteed demand.",
+          "The range is model uncertainty only (about 80% of past outcomes fell inside it); manager context is applied separately by the decision tools.",
+          "hgb assumes next week's prices and promotions are known when planning.",
+          "Meal names and recipes are not in the data; meals are identified by ID, category and cuisine."
+        ]
+      }
+    },
+    {
+      "key": "center-13/meal-2444/week-146",
+      "forecast": 109.99352967508075,
+      "source": "hgb model refit on all observed weeks <= history_end_week; target-week prices and promotions from the planning row; range from hgb's own errors (weeks 116-125).",
+      "forecast_record": {
+        "center_id": 13,
+        "meal_id": 2444,
+        "target_week": 146,
+        "history_end_week": 145,
+        "forecast_orders": 109.99352967508075,
+        "range_low": 57.30662896071707,
+        "range_high": 192.70866399074148,
+        "forecast_orders_display": 110.0,
+        "range_low_display": 57.3,
+        "range_high_display": 192.7,
+        "method_requested": "hgb",
+        "method": "hgb",
+        "is_fallback": false,
+        "range_source": "empirical_p10_p90_by_size_weeks116_125",
+        "recent_orders": [
+          {
+            "week": 142,
+            "orders": 108
+          },
+          {
+            "week": 143,
+            "orders": 593
+          },
+          {
+            "week": 144,
+            "orders": 487
+          },
+          {
+            "week": 145,
+            "orders": 216
+          }
+        ],
+        "provenance": "hgb model refit on all observed weeks <= history_end_week; target-week prices and promotions from the planning row; range from hgb's own errors (weeks 116-125).",
+        "assumptions": [
+          "Forecasts are observed weekly orders, not guaranteed demand.",
+          "The range is model uncertainty only (about 80% of past outcomes fell inside it); manager context is applied separately by the decision tools.",
+          "hgb assumes next week's prices and promotions are known when planning.",
+          "Meal names and recipes are not in the data; meals are identified by ID, category and cuisine."
+        ]
+      }
+    },
+    {
+      "key": "center-13/meal-1198/week-146",
+      "forecast": 453.15969951433823,
+      "source": "hgb model refit on all observed weeks <= history_end_week; target-week prices and promotions from the planning row; range from hgb's own errors (weeks 116-125).",
+      "forecast_record": {
+        "center_id": 13,
+        "meal_id": 1198,
+        "target_week": 146,
+        "history_end_week": 145,
+        "forecast_orders": 453.15969951433823,
+        "range_low": 299.08540167946325,
+        "range_high": 666.5979179855916,
+        "forecast_orders_display": 453.2,
+        "range_low_display": 299.1,
+        "range_high_display": 666.6,
+        "method_requested": "hgb",
+        "method": "hgb",
+        "is_fallback": false,
+        "range_source": "empirical_p10_p90_by_size_weeks116_125",
+        "recent_orders": [
+          {
+            "week": 142,
+            "orders": 703
+          },
+          {
+            "week": 143,
+            "orders": 298
+          },
+          {
+            "week": 144,
+            "orders": 419
+          },
+          {
+            "week": 145,
+            "orders": 446
+          }
+        ],
+        "provenance": "hgb model refit on all observed weeks <= history_end_week; target-week prices and promotions from the planning row; range from hgb's own errors (weeks 116-125).",
+        "assumptions": [
+          "Forecasts are observed weekly orders, not guaranteed demand.",
+          "The range is model uncertainty only (about 80% of past outcomes fell inside it); manager context is applied separately by the decision tools.",
+          "hgb assumes next week's prices and promotions are known when planning.",
+          "Meal names and recipes are not in the data; meals are identified by ID, category and cuisine."
+        ]
+      }
+    },
+    {
+      "key": "center-13/meal-2664/week-146",
+      "forecast": 513.8076062757716,
+      "source": "hgb model refit on all observed weeks <= history_end_week; target-week prices and promotions from the planning row; range from hgb's own errors (weeks 116-125).",
+      "forecast_record": {
+        "center_id": 13,
+        "meal_id": 2664,
+        "target_week": 146,
+        "history_end_week": 145,
+        "forecast_orders": 513.8076062757716,
+        "range_low": 339.11302014200925,
+        "range_high": 755.8109888316601,
+        "forecast_orders_display": 513.8,
+        "range_low_display": 339.1,
+        "range_high_display": 755.8,
+        "method_requested": "hgb",
+        "method": "hgb",
+        "is_fallback": false,
+        "range_source": "empirical_p10_p90_by_size_weeks116_125",
+        "recent_orders": [
+          {
+            "week": 142,
+            "orders": 406
+          },
+          {
+            "week": 143,
+            "orders": 418
+          },
+          {
+            "week": 144,
+            "orders": 1106
+          },
+          {
+            "week": 145,
+            "orders": 770
+          }
+        ],
+        "provenance": "hgb model refit on all observed weeks <= history_end_week; target-week prices and promotions from the planning row; range from hgb's own errors (weeks 116-125).",
+        "assumptions": [
+          "Forecasts are observed weekly orders, not guaranteed demand.",
+          "The range is model uncertainty only (about 80% of past outcomes fell inside it); manager context is applied separately by the decision tools.",
+          "hgb assumes next week's prices and promotions are known when planning.",
+          "Meal names and recipes are not in the data; meals are identified by ID, category and cuisine."
+        ]
+      }
+    }
+  ]
+}
